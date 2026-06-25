@@ -1,0 +1,34 @@
+﻿# Archivos compilados y binarios de salida
+**/bin/
+**/obj/
+/[Bb]in/
+/[Oo]bj/
+
+# Archivos de configuración de usuario de Visual Studio y VS Code
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de caché y temporales de Rider / JetBrains
+.idea/
+*.sln.iml
+
+# Archivos de publicación y paquetes descargados
+*.publish.htm
+/publish/
+**/App_Data/Jobs/
+.nuget/
+**/packages/
+
+# Archivos de configuración local y secretos (¡No subas contraseñas!)
+*.local.settings.json
+appsettings.Development.json
+UserSecrets/
+.env
+
+# Archivos temporales del sistema operativo
+Thumbs.db
+.DS_Store
