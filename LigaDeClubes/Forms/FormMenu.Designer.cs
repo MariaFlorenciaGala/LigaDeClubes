@@ -33,25 +33,28 @@ namespace LigaDeClubes
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
             this.panelLateral = new System.Windows.Forms.Panel();
             this.panelBtns = new System.Windows.Forms.Panel();
+            this.btnInformacion = new System.Windows.Forms.Button();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnFuncionalidades = new System.Windows.Forms.Button();
+            this.btnEstadisticas = new System.Windows.Forms.Button();
             this.btnPartidos = new System.Windows.Forms.Button();
             this.btnJugadores = new System.Windows.Forms.Button();
             this.btnEquipos = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LogoBox = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.btnEstadisticas = new System.Windows.Forms.Button();
-            this.btnFuncionalidades = new System.Windows.Forms.Button();
-            this.btnReportes = new System.Windows.Forms.Button();
-            this.btnInformacion = new System.Windows.Forms.Button();
+            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.title1 = new System.Windows.Forms.Label();
+            this.title2 = new System.Windows.Forms.Label();
             this.panelLateral.SuspendLayout();
             this.panelBtns.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLateral
             // 
             this.panelLateral.BackColor = System.Drawing.Color.DarkRed;
             this.panelLateral.Controls.Add(this.panelBtns);
-            this.panelLateral.Controls.Add(this.pictureBox1);
+            this.panelLateral.Controls.Add(this.LogoBox);
             this.panelLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLateral.Location = new System.Drawing.Point(0, 0);
             this.panelLateral.Name = "panelLateral";
@@ -73,6 +76,62 @@ namespace LigaDeClubes
             this.panelBtns.Name = "panelBtns";
             this.panelBtns.Size = new System.Drawing.Size(237, 314);
             this.panelBtns.TabIndex = 1;
+            // 
+            // btnInformacion
+            // 
+            this.btnInformacion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInformacion.FlatAppearance.BorderSize = 0;
+            this.btnInformacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnInformacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInformacion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInformacion.Location = new System.Drawing.Point(0, 240);
+            this.btnInformacion.Name = "btnInformacion";
+            this.btnInformacion.Size = new System.Drawing.Size(237, 40);
+            this.btnInformacion.TabIndex = 6;
+            this.btnInformacion.Text = "Informacion";
+            this.btnInformacion.UseVisualStyleBackColor = true;
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReportes.FlatAppearance.BorderSize = 0;
+            this.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.Location = new System.Drawing.Point(0, 200);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(237, 40);
+            this.btnReportes.TabIndex = 5;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.UseVisualStyleBackColor = true;
+            // 
+            // btnFuncionalidades
+            // 
+            this.btnFuncionalidades.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFuncionalidades.FlatAppearance.BorderSize = 0;
+            this.btnFuncionalidades.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnFuncionalidades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFuncionalidades.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFuncionalidades.Location = new System.Drawing.Point(0, 160);
+            this.btnFuncionalidades.Name = "btnFuncionalidades";
+            this.btnFuncionalidades.Size = new System.Drawing.Size(237, 40);
+            this.btnFuncionalidades.TabIndex = 4;
+            this.btnFuncionalidades.Text = "Funcionalidades";
+            this.btnFuncionalidades.UseVisualStyleBackColor = true;
+            // 
+            // btnEstadisticas
+            // 
+            this.btnEstadisticas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEstadisticas.FlatAppearance.BorderSize = 0;
+            this.btnEstadisticas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstadisticas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstadisticas.Location = new System.Drawing.Point(0, 120);
+            this.btnEstadisticas.Name = "btnEstadisticas";
+            this.btnEstadisticas.Size = new System.Drawing.Size(237, 40);
+            this.btnEstadisticas.TabIndex = 3;
+            this.btnEstadisticas.Text = "Estadisticas";
+            this.btnEstadisticas.UseVisualStyleBackColor = true;
             // 
             // btnPartidos
             // 
@@ -116,16 +175,16 @@ namespace LigaDeClubes
             this.btnEquipos.Text = "Equipos";
             this.btnEquipos.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // LogoBox
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(65, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(103, 95);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.LogoBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogoBox.BackgroundImage")));
+            this.LogoBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogoBox.Location = new System.Drawing.Point(65, 12);
+            this.LogoBox.Name = "LogoBox";
+            this.LogoBox.Size = new System.Drawing.Size(103, 95);
+            this.LogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LogoBox.TabIndex = 0;
+            this.LogoBox.TabStop = false;
             // 
             // btnSalir
             // 
@@ -138,68 +197,49 @@ namespace LigaDeClubes
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // btnEstadisticas
+            // panelContenedor
             // 
-            this.btnEstadisticas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEstadisticas.FlatAppearance.BorderSize = 0;
-            this.btnEstadisticas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEstadisticas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstadisticas.Location = new System.Drawing.Point(0, 120);
-            this.btnEstadisticas.Name = "btnEstadisticas";
-            this.btnEstadisticas.Size = new System.Drawing.Size(237, 40);
-            this.btnEstadisticas.TabIndex = 3;
-            this.btnEstadisticas.Text = "Estadisticas";
-            this.btnEstadisticas.UseVisualStyleBackColor = true;
+            this.panelContenedor.BackColor = System.Drawing.Color.White;
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Location = new System.Drawing.Point(237, 87);
+            this.panelContenedor.Size = new System.Drawing.Size(563, 363);
+            this.panelContenedor.TabIndex = 2;
             // 
-            // btnFuncionalidades
+            // title1
             // 
-            this.btnFuncionalidades.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFuncionalidades.FlatAppearance.BorderSize = 0;
-            this.btnFuncionalidades.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnFuncionalidades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFuncionalidades.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFuncionalidades.Location = new System.Drawing.Point(0, 160);
-            this.btnFuncionalidades.Name = "btnFuncionalidades";
-            this.btnFuncionalidades.Size = new System.Drawing.Size(237, 40);
-            this.btnFuncionalidades.TabIndex = 4;
-            this.btnFuncionalidades.Text = "Funcionalidades";
-            this.btnFuncionalidades.UseVisualStyleBackColor = true;
+            this.title1.AutoSize = true;
+            this.title1.BackColor = System.Drawing.Color.Transparent;
+            this.title1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title1.ForeColor = System.Drawing.Color.Brown;
+            this.title1.Location = new System.Drawing.Point(264, 9);
+            this.title1.Name = "title1";
+            this.title1.Size = new System.Drawing.Size(175, 27);
+            this.title1.TabIndex = 3;
+            this.title1.Text = "Liga de clubes";
             // 
-            // btnReportes
+            // title2
             // 
-            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReportes.FlatAppearance.BorderSize = 0;
-            this.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReportes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportes.Location = new System.Drawing.Point(0, 200);
-            this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(237, 40);
-            this.btnReportes.TabIndex = 5;
-            this.btnReportes.Text = "Reportes";
-            this.btnReportes.UseVisualStyleBackColor = true;
-            // 
-            // btnInformacion
-            // 
-            this.btnInformacion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInformacion.FlatAppearance.BorderSize = 0;
-            this.btnInformacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnInformacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInformacion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInformacion.Location = new System.Drawing.Point(0, 240);
-            this.btnInformacion.Name = "btnInformacion";
-            this.btnInformacion.Size = new System.Drawing.Size(237, 40);
-            this.btnInformacion.TabIndex = 6;
-            this.btnInformacion.Text = "Informacion";
-            this.btnInformacion.UseVisualStyleBackColor = true;
+            this.title2.AutoSize = true;
+            this.title2.BackColor = System.Drawing.Color.Transparent;
+            this.title2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title2.ForeColor = System.Drawing.Color.Brown;
+            this.title2.Location = new System.Drawing.Point(264, 42);
+            this.title2.Name = "title2";
+            this.title2.Size = new System.Drawing.Size(247, 27);
+            this.title2.TabIndex = 4;
+            this.title2.Text = "María Florencia Gala";
             // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.title2);
+            this.Controls.Add(this.title1);
+            this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.panelLateral);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -208,17 +248,17 @@ namespace LigaDeClubes
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMenu";
             this.panelLateral.ResumeLayout(false);
-            this.panelLateral.PerformLayout();
             this.panelBtns.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel panelLateral;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox LogoBox;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Panel panelBtns;
         private System.Windows.Forms.Button btnEquipos;
@@ -228,5 +268,8 @@ namespace LigaDeClubes
         private System.Windows.Forms.Button btnReportes;
         private System.Windows.Forms.Button btnFuncionalidades;
         private System.Windows.Forms.Button btnEstadisticas;
+        private System.Windows.Forms.Panel panelContenedor;
+        private System.Windows.Forms.Label title1;
+        private System.Windows.Forms.Label title2;
     }
 }
