@@ -13,6 +13,7 @@ namespace LigaDeClubes.Models
         public bool Seguro { get; set; }
         public bool Afiliado { get; set; }
         public List<Equipo> Equipos { get; set; }
+
         public string Categoria => ClasificarCategoria(Edad);
 
         public Jugador(
@@ -34,7 +35,10 @@ namespace LigaDeClubes.Models
 
         public void AgregarEquipo(Equipo equipo)
         {
-            Equipos.Add(equipo);
+            if(this.Categoria == equipo.Categoria)
+            {
+                Equipos.Add(equipo);
+            }
         }
 
         public void Mostrar()

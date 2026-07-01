@@ -9,15 +9,20 @@ namespace LigaDeClubes.Models
         public string Nombre { get; set; }
         public string Club { get; set; }
         public string Categoria { get; set; }
+        public List<Jugador> Jugadores { get; set; }
+
 
         public Equipo(
             string nombre, 
             string club, 
-            string categoria)
+            string categoria
+        
+            )
         {
             Nombre = nombre;
             Club = club;
             Categoria = categoria;
+            Jugadores = new List<Jugador>();
         }
 
         public int ObtenerCantidadJugadores(List<Jugador> jugadores)
