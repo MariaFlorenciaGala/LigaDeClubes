@@ -19,9 +19,6 @@ namespace LigaDeClubes
         private UserControlEstadisticas ucEstadisticas;
         private UserControlReportes ucReportes;
 
-
-
-
         public FormMenu(Liga liga)
         {
             InitializeComponent();
@@ -60,6 +57,7 @@ namespace LigaDeClubes
 
             //Funcionalidades
             ucFuncionalidades = new UserControlFuncionalidades(liga);
+            ucFuncionalidades.CargarDatos();
 
             ucFuncionalidades.Visible = false;
             panelContenedor.Controls.Add(ucFuncionalidades);
@@ -86,6 +84,9 @@ namespace LigaDeClubes
             btnReportes.Click += btnReportes_Click;
             btnFuncionalidades.Click += btnFuncionalidades_Click;
             btnInformacion.Click += btnInformacion_Click;
+
+            System.Diagnostics.Debug.WriteLine($"panelContenedor: {panelContenedor.Size}");
+            System.Diagnostics.Debug.WriteLine($"ucEquipos: {ucEquipos.Size}");
         }
         private void OcultarTodos()
         {
@@ -149,6 +150,11 @@ namespace LigaDeClubes
             OcultarTodos();
             ucInformacion.Visible = true;
             ucInformacion.BringToFront();
+        }
+
+        private void panelLateral_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
