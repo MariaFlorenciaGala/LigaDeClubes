@@ -9,6 +9,7 @@ namespace LigaDeClubes.Models
 {
     public class Partido
     {
+        public int IdPartido { get; set; }
         public string Fecha { get; set; }
         public string Hora { get; set; }
         public int GolesEquipo1 { get; set; }
@@ -22,6 +23,7 @@ namespace LigaDeClubes.Models
 
 
         public Partido(
+            int idPartido,
             string fecha,
             string hora,
             int golesEquipo1,
@@ -32,6 +34,7 @@ namespace LigaDeClubes.Models
             Torneo torneo
             )
         {
+            IdPartido = idPartido;
             Fecha = fecha;
             Hora = hora;
             GolesEquipo1 = golesEquipo1;
